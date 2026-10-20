@@ -799,3 +799,17 @@ html{scroll-padding-top:96px}
 .trilha-card.is-next{background:var(--petro);border-color:var(--petro);color:var(--on-petro)}
 .trilha-card.is-next .eyebrow,.trilha-card.is-next span:last-child{color:var(--on-petro-muted)}
 .trilha-card.is-next b::after{content:" →"}
+/* Botões de acompanhar: WhatsApp e fonte preferida no Google */
+.follow{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.follow-top{margin-bottom:28px}
+.btn-wa{background:#13803F;color:#fff}
+.btn-wa:hover{background:#0F6B34}
+.btn-gsrc{background:var(--surface);color:#1A5FD0;box-shadow:inset 0 0 0 1.5px #1A73E8}
+.btn-gsrc:hover{background:#EEF4FE}
+.follow.on-dark{margin-top:16px}
+.follow.on-dark .btn-gsrc{background:transparent;color:var(--on-petro);box-shadow:inset 0 0 0 1.5px var(--on-petro-muted)}
+.follow.on-dark .btn-gsrc:hover{background:rgba(255,255,255,.08)}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .btn-gsrc{color:#8AB4F8;box-shadow:inset 0 0 0 1.5px #8AB4F8}:root:not([data-theme="light"]) .btn-gsrc:hover{background:rgba(138,180,248,.1)}}
+:root[data-theme="dark"] .btn-gsrc{color:#8AB4F8;box-shadow:inset 0 0 0 1.5px #8AB4F8}
+@media (max-width:440px){.follow .btn{white-space:normal;text-align:left}}
+.kit > .follow{margin-bottom:-36px}
