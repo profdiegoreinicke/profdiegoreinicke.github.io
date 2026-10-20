@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://profdiegoreinicke.github.io/sitemap.xml
