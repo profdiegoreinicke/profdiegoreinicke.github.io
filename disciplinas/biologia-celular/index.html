@@ -20,9 +20,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&amp;family=Figtree:ital,wght@0,400..700;1,400&amp;family=JetBrains+Mono:wght@400..600&amp;display=swap">
-<link rel="stylesheet" href="/assets/css/site.css?v=0f931d1a">
+<link rel="stylesheet" href="/assets/css/site.css?v=d40a683e">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Início","item":"https://profdiegoreinicke.github.io/"},{"@type":"ListItem","position":2,"name":"Disciplinas","item":"https://profdiegoreinicke.github.io/disciplinas/"},{"@type":"ListItem","position":3,"name":"Biologia Celular","item":"https://profdiegoreinicke.github.io/disciplinas/biologia-celular/"}]}</script>
-<script>window.SITE={"preview":false,"forms":{"listaDeEspera":"","newsletter":"","materiais":""},"urls":{"lista":"/lista-de-espera/","curso":"/cursos/fisiologia-renal/","nefron":"/laboratorio/nefron-interativo/","jornada":"/laboratorio/jornada-do-rim/"}};</script>
+<script>window.SITE={"preview":false,"forms":{"listaDeEspera":"","newsletter":"","materiais":"","sugestoes":"https://formsubmit.co/ajax/diegobioreinicke@gmail.com"},"urls":{"lista":"/lista-de-espera/","curso":"/cursos/fisiologia-renal/","nefron":"/laboratorio/nefron-interativo/","jornada":"/laboratorio/jornada-do-rim/"}};</script>
 </head>
 <body>
 <a class="skip" href="#conteudo">Pular para o conteúdo</a>
@@ -81,6 +81,41 @@
   </section>
   <div class="cta-strip"><div><p class="eyebrow light">Enquanto o curso não sai</p><h3>Seja avisado dos lançamentos</h3><p>Os cursos de cada disciplina são lançados um de cada vez. O primeiro é Fisiologia Renal, em fevereiro de 2027.</p></div><a class="btn btn-sun" href="/lista-de-espera/">Entrar na lista de espera</a></div>
 </div>
+<section class="fbk" aria-labelledby="fb-t"><div class="wrap"><div class="fbk-in">
+  <div class="fbk-txt">
+    <p class="eyebrow">Ajude a melhorar este conteúdo</p>
+    <h2 id="fb-t">Viu um erro ou tem uma sugestão?</h2>
+    <p>Correção de conceito, explicação confusa, ideia de tema ou dúvida: escreva aqui. Cada mensagem é lida pelo Prof. Diego Reinicke e, quando for o caso, a página é corrigida.</p>
+  </div>
+  <div class="fbk-box">
+  <form class="form" data-feedback id="fb" novalidate>
+    <label class="field" for="fb-tipo">Tipo<select id="fb-tipo" name="tipo">
+      <option>Correção de conceito ou dado</option>
+      <option>Sugestão de melhoria</option>
+      <option>Dúvida sobre o conteúdo</option>
+      <option>Outro assunto</option>
+    </select></label>
+    <label class="field" for="fb-msg">Sua mensagem<textarea id="fb-msg" name="mensagem" rows="4" required maxlength="3000" placeholder="Ex.: no segundo parágrafo, o valor de referência está diferente do meu livro (qual livro e página)."></textarea></label>
+    <div class="fbk-row">
+      <label class="field" for="fb-nome">Nome (opcional)<input type="text" id="fb-nome" name="nome" autocomplete="given-name"></label>
+      <label class="field" for="fb-email">E-mail (opcional, para resposta)<input type="email" id="fb-email" name="email" autocomplete="email"></label>
+    </div>
+    <label class="check" for="fb-lgpd"><input type="checkbox" id="fb-lgpd" name="consentimento" value="sim" required><span>Li a <a href="/privacidade/">política de privacidade</a> e aceito que esta mensagem seja enviada ao professor.</span></label>
+    <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+    <input type="hidden" name="pagina" value="Biologia Celular">
+    <input type="hidden" name="endereco" value="https://profdiegoreinicke.github.io/disciplinas/biologia-celular/">
+    <input type="hidden" name="_subject" value="Sugestão no site: Biologia Celular">
+    <input type="hidden" name="_template" value="table">
+    <p class="err" data-err hidden></p>
+    <button class="btn btn-petro btn-sm" type="submit">Enviar sugestão</button>
+  </form>
+  <div class="form-ok" data-ok hidden>
+    <h3>Obrigado! Sua mensagem foi enviada.</h3>
+    <p>Se você deixou o e-mail, a resposta chega por lá.</p>
+    <p class="proto" data-preview-note hidden><b>Prévia:</b> nada foi enviado.</p>
+  </div>
+  </div>
+</div></div></section>
 </main>
 <footer class="foot">
   <div class="wrap">
@@ -102,6 +137,6 @@
   </div>
 </footer>
 <div class="toasts" id="toasts" aria-live="polite"></div>
-<script src="/assets/js/site.js?v=0f931d1a" defer></script>
+<script src="/assets/js/site.js?v=d40a683e" defer></script>
 </body>
 </html>

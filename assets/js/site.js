@@ -91,4 +91,29 @@
         .catch(function () { err.textContent = "Não foi possível enviar agora. Confira a conexão e tente de novo."; err.hidden = false; btn.disabled = false; btn.textContent = label; });
     });
   });
+
+  /* Campo de sugestões (fim das páginas) */
+  document.querySelectorAll("form[data-feedback]").forEach(function (f) {
+    var box = f.parentElement, ok = box.querySelector("[data-ok]"), err = f.querySelector("[data-err]");
+    var endpoint = (SITE.forms || {}).sugestoes || "";
+    f.addEventListener("submit", function (e) {
+      e.preventDefault();
+      var fd = new FormData(f), msg = "";
+      if (fd.get("_honey")) return;
+      var texto = String(fd.get("mensagem") || "").trim(), email = String(fd.get("email") || "").trim();
+      if (texto.length < 10) msg = "Escreva a sua mensagem (pelo menos algumas palavras).";
+      else if (email && !validEmail(email)) msg = "Confira o e-mail: parece incompleto. Ele é opcional.";
+      else if (!fd.get("consentimento")) msg = "Para enviar, marque a caixa de aceite da política de privacidade.";
+      if (msg) { err.textContent = msg; err.hidden = false; return; }
+      err.hidden = true;
+      if (!email) fd.delete("email");
+      var btn = f.querySelector("button[type=submit]"); btn.disabled = true; var label = btn.textContent; btn.textContent = "Enviando…";
+      function done() { f.hidden = true; ok.hidden = false; var note = ok.querySelector("[data-preview-note]"); if (note) note.hidden = !SITE.preview; }
+      function fail() { err.textContent = "Não foi possível enviar agora. Confira a conexão e tente de novo."; err.hidden = false; btn.disabled = false; btn.textContent = label; }
+      if (SITE.preview || !endpoint) { setTimeout(done, 400); return; }
+      fetch(endpoint, { method: "POST", body: fd, headers: { Accept: "application/json" } })
+        .then(function (r) { return r.json().catch(function () { return {}; }).then(function (j) { if (!r.ok || String(j.success) === "false") throw new Error(j.message || r.status); done(); }); })
+        .catch(fail);
+    });
+  });
 })();
