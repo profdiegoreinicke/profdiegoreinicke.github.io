@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Prof. Diego Reinicke — Ciência &amp; Saúde</title>
     <link>https://profdiegoreinicke.github.io/ciencia-e-saude/</link>
     <description>Notícias científicas, artigos comentados e novos tratamentos em saúde, explicados por um professor de fisiologia, com autor, data e referências.</description>
     <language>pt-BR</language>
-    <lastBuildDate>Fri, 23 Oct 2026 18:33:24 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 23 Oct 2026 18:35:42 GMT</lastBuildDate>
     <atom:link href="https://profdiegoreinicke.github.io/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Terapia CAR-T: como linfócitos reprogramados aprendem a caçar o câncer</title>
@@ -13,7 +13,7 @@
       <guid isPermaLink="true">https://profdiegoreinicke.github.io/ciencia-e-saude/terapia-car-t/</guid>
       <pubDate>Wed, 21 Oct 2026 03:00:00 GMT</pubDate>
       <description>O que é a terapia CAR-T, como o receptor quimérico é construído, como as células são produzidas, o que mostraram os estudos, os riscos (síndrome de liberação de citocinas) e a situação no Brasil.</description>
-      <dc:creator>Prof. Diego Reinicke</dc:creator>
+      <author>diegobioreinicke@gmail.com (Prof. Diego Reinicke)</author>
       <category>Imunologia</category>
     </item>
     <item>
@@ -22,7 +22,7 @@
       <guid isPermaLink="true">https://profdiegoreinicke.github.io/ciencia-e-saude/inibidores-sglt2-protecao-renal/</guid>
       <pubDate>Wed, 21 Oct 2026 03:00:00 GMT</pubDate>
       <description>Como as gliflozinas (dapagliflozina, empagliflozina) protegem os rins: SGLT2 no túbulo proximal, feedback tubuloglomerular e o que mostraram os estudos DAPA-CKD e EMPA-KIDNEY.</description>
-      <dc:creator>Prof. Diego Reinicke</dc:creator>
+      <author>diegobioreinicke@gmail.com (Prof. Diego Reinicke)</author>
       <category>Fisiologia Humana</category>
     </item>
     <item>
@@ -31,7 +31,7 @@
       <guid isPermaLink="true">https://profdiegoreinicke.github.io/ciencia-e-saude/creatinina-alta/</guid>
       <pubDate>Tue, 20 Oct 2026 03:00:00 GMT</pubDate>
       <description>Creatinina alta no exame? Entenda de onde ela vem, por que pode subir sem doença nos rins, o que é a TFG estimada e quando o resultado pede atenção.</description>
-      <dc:creator>Prof. Diego Reinicke</dc:creator>
+      <author>diegobioreinicke@gmail.com (Prof. Diego Reinicke)</author>
       <category>Fisiologia Humana</category>
     </item>
   </channel>
