@@ -5,8 +5,17 @@
     <link>https://profdiegoreinicke.github.io/ciencia-e-saude/</link>
     <description>Notícias científicas, artigos comentados e novos tratamentos em saúde, explicados por um professor de fisiologia, com autor, data e referências.</description>
     <language>pt-BR</language>
-    <lastBuildDate>Tue, 17 Nov 2026 11:00:43 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 20 Nov 2026 11:00:44 GMT</lastBuildDate>
     <atom:link href="https://profdiegoreinicke.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Proteína tau se associa a ondas lentas “solitárias” no sono e a pior consolidação da memória</title>
+      <link>https://profdiegoreinicke.github.io/ciencia-e-saude/tau-ondas-lentas-sono-memoria/</link>
+      <guid isPermaLink="true">https://profdiegoreinicke.github.io/ciencia-e-saude/tau-ondas-lentas-sono-memoria/</guid>
+      <pubDate>Fri, 20 Nov 2026 03:00:00 GMT</pubDate>
+      <description>Estudo na Nature Neuroscience (2026) mostra que, em idosos sem comprometimento cognitivo, mais tau no córtex frontal acompanha ondas lentas do sono que deixam de se propagar pelo cérebro e pior retenção da memória durante a noite.</description>
+      <author>diegobioreinicke@gmail.com (Prof. Diego Reinicke)</author>
+      <category>Fisiologia Humana</category>
+    </item>
     <item>
       <title>Musculação reduz a perda de massa magra durante o tratamento com tirzepatida, mostra ensaio clínico</title>
       <link>https://profdiegoreinicke.github.io/ciencia-e-saude/musculacao-tirzepatida-massa-magra/</link>
